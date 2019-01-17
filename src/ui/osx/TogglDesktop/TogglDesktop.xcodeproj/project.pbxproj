@@ -145,13 +145,13 @@
 		BA0CEC6521BE590200F1BF01 /* NSTableView+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CEC6421BE590200F1BF01 /* NSTableView+Diff.swift */; };
 		BA13E05C21C7BA6000835EC1 /* UserNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA13E05921C7B9D900835EC1 /* UserNotificationCenter.m */; };
 		BA2DA12021A691FF0027B7A5 /* TrackingService.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2DA11F21A691FF0027B7A5 /* TrackingService.m */; };
+		BA5A10CB21F03A4500C84C36 /* libtbb.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA5A10CA21F03A4500C84C36 /* libtbb.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BA6E873521DDC1E2005E2451 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6E86B621DDB331005E2451 /* Sparkle.framework */; };
 		BA6E873621DDC1E2005E2451 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA6E86B621DDB331005E2451 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BA7B4BCB21C0EF8800B75B14 /* NSAlert+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B4BCA21C0EF8800B75B14 /* NSAlert+Utils.m */; };
-		BA712EC221BF907200A2D8DD /* UndoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA712EC121BF907200A2D8DD /* UndoStorage.swift */; };
 		BA712EC221BF907200A2D8DD /* UndoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA712EC121BF907200A2D8DD /* UndoManager.swift */; };
 		BA712EC621BF913800A2D8DD /* TimeEntrySnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA712EC521BF913800A2D8DD /* TimeEntrySnapshot.swift */; };
 		BA712EC821BF9F1200A2D8DD /* UndoStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA712EC721BF9F1200A2D8DD /* UndoStack.swift */; };
+		BA7B4BCB21C0EF8800B75B14 /* NSAlert+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B4BCA21C0EF8800B75B14 /* NSAlert+Utils.m */; };
 		BA7B4C3721C24B9D00B75B14 /* UndoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7B4C3621C24B9D00B75B14 /* UndoTextField.m */; };
 		BA7B4C7C21C293E700B75B14 /* String+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7B4C7B21C293E700B75B14 /* String+Optional.swift */; };
 		BAB8D49421BE742D00D63DA5 /* NSTableView+TimeEntryDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB8D49321BE742D00D63DA5 /* NSTableView+TimeEntryDiff.swift */; };
@@ -406,6 +406,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BA5A10CB21F03A4500C84C36 /* libtbb.dylib in CopyFiles */,
 				3CFE547E201781A7006B673A /* libcrypto.1.1.dylib in CopyFiles */,
 				BAD2342121D612DF0039C742 /* libPocoNet.60.dylib in CopyFiles */,
 				BAD2342521D612DF0039C742 /* libPocoJSON.60.dylib in CopyFiles */,
@@ -419,7 +420,6 @@
 				BAD2342621D612DF0039C742 /* libPocoUtil.60.dylib in CopyFiles */,
 				BAD2342021D612DF0039C742 /* libPocoNetSSL.60.dylib in CopyFiles */,
 				BAD2342221D612DF0039C742 /* libPocoCrypto.60.dylib in CopyFiles */,
-				74A3D06219E418CB00C51BB6 /* Sparkle.framework in CopyFiles */,
 				BAD2342421D612DF0039C742 /* libPocoXML.60.dylib in CopyFiles */,
 				74213490195C50B5007EF78B /* CrashReporter.framework in CopyFiles */,
 				BA6E873621DDC1E2005E2451 /* Sparkle.framework in CopyFiles */,
@@ -658,13 +658,13 @@
 		BA13E05A21C7B9D900835EC1 /* UserNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserNotificationCenter.h; path = test2/UserNotificationCenter.h; sourceTree = SOURCE_ROOT; };
 		BA2DA11E21A691FF0027B7A5 /* TrackingService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackingService.h; sourceTree = "<group>"; };
 		BA2DA11F21A691FF0027B7A5 /* TrackingService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackingService.m; sourceTree = "<group>"; };
+		BA5A10CA21F03A4500C84C36 /* libtbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbb.dylib; path = ../../../../third_party/tbb/build/mac_release/libtbb.dylib; sourceTree = "<group>"; };
 		BA6E86A521DDB331005E2451 /* Sparkle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparkle.xcodeproj; path = ../../../../third_party/Sparkle/Sparkle.xcodeproj; sourceTree = "<group>"; };
-		BA7B4BC921C0EF8800B75B14 /* NSAlert+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAlert+Utils.h"; sourceTree = "<group>"; };
-		BA7B4BCA21C0EF8800B75B14 /* NSAlert+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+Utils.m"; sourceTree = "<group>"; };
-		BA712EC121BF907200A2D8DD /* UndoStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoStorage.swift; sourceTree = "<group>"; };
 		BA712EC121BF907200A2D8DD /* UndoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoManager.swift; sourceTree = "<group>"; };
 		BA712EC521BF913800A2D8DD /* TimeEntrySnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntrySnapshot.swift; sourceTree = "<group>"; };
 		BA712EC721BF9F1200A2D8DD /* UndoStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoStack.swift; sourceTree = "<group>"; };
+		BA7B4BC921C0EF8800B75B14 /* NSAlert+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAlert+Utils.h"; sourceTree = "<group>"; };
+		BA7B4BCA21C0EF8800B75B14 /* NSAlert+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+Utils.m"; sourceTree = "<group>"; };
 		BA7B4C3521C24B9D00B75B14 /* UndoTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UndoTextField.h; sourceTree = "<group>"; };
 		BA7B4C3621C24B9D00B75B14 /* UndoTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndoTextField.m; sourceTree = "<group>"; };
 		BA7B4C7B21C293E700B75B14 /* String+Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Optional.swift"; sourceTree = "<group>"; };
@@ -756,6 +756,7 @@
 		69FC17E817E6534400B96425 = {
 			isa = PBXGroup;
 			children = (
+				BA5A10CA21F03A4500C84C36 /* libtbb.dylib */,
 				BAD2341921D612DE0039C742 /* libPocoCrypto.60.dylib */,
 				BAD2341A21D612DE0039C742 /* libPocoData.60.dylib */,
 				BAD2341621D612DE0039C742 /* libPocoDataSQLite.60.dylib */,
@@ -1172,6 +1173,24 @@
 				BA13E05921C7B9D900835EC1 /* UserNotificationCenter.m */,
 			);
 			name = UserNotification;
+			sourceTree = "<unknown>";
+		};
+		BA6E86A621DDB331005E2451 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA6E86B621DDB331005E2451 /* Sparkle.framework */,
+				BA6E86B821DDB331005E2451 /* Sparkle Test App.app */,
+				BA6E86BA21DDB331005E2451 /* Sparkle Unit Tests.xctest */,
+				BA6E86BC21DDB331005E2451 /* BinaryDelta */,
+				BA6E86BE21DDB331005E2451 /* Autoupdate.app */,
+				BA6E86C021DDB331005E2451 /* UI Tests.xctest */,
+				BA6E86C221DDB331005E2451 /* fileop */,
+				BA6E86C421DDB331005E2451 /* generate_appcast */,
+				BA6E86C621DDB331005E2451 /* generate_keys */,
+				BA6E86C821DDB331005E2451 /* sign_update */,
+			);
+			name = Products;
+			sourceTree = "<unknown>";
 		};
 		BA712EAF21BF904E00A2D8DD /* Feature */ = {
 			isa = PBXGroup;
@@ -1190,30 +1209,6 @@
 				BA7B4C7B21C293E700B75B14 /* String+Optional.swift */,
 			);
 			path = Undo;
-			sourceTree = "<group>";
-		};
-		BA6E86A621DDB331005E2451 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BA6E86B621DDB331005E2451 /* Sparkle.framework */,
-				BA6E86B821DDB331005E2451 /* Sparkle Test App.app */,
-				BA6E86BA21DDB331005E2451 /* Sparkle Unit Tests.xctest */,
-				BA6E86BC21DDB331005E2451 /* BinaryDelta */,
-				BA6E86BE21DDB331005E2451 /* Autoupdate.app */,
-				BA6E86C021DDB331005E2451 /* UI Tests.xctest */,
-				BA6E86C221DDB331005E2451 /* fileop */,
-				BA6E86C421DDB331005E2451 /* generate_appcast */,
-				BA6E86C621DDB331005E2451 /* generate_keys */,
-				BA6E86C821DDB331005E2451 /* sign_update */,
-			);
-			name = Products;
-		};
-		BA6E874C21DE12B5005E2451 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				BAD232CF21D495E20039C742 /* UserNotificationCenter.m */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		BAF87DDB21A3E1E700624EBE /* Extension */ = {
@@ -1623,20 +1618,6 @@
 			shellPath = /usr/bin/ruby;
 			shellScript = "if ENV[\"DEBUG_INFORMATION_FORMAT\"] != \"dwarf-with-dsym\"\nexit\nend\n\nfork do\nProcess.setsid\nSTDIN.reopen(\"/dev/null\")\nSTDOUT.reopen(\"/dev/null\", \"a\")\nSTDERR.reopen(\"/dev/null\", \"a\")\n\nrequire 'shellwords'\n\nDir[\"#{ENV[\"DWARF_DSYM_FOLDER_PATH\"]}/#{ENV[\"DWARF_DSYM_FILE_NAME\"]}/Contents/Resources/DWARF/*\"].each do |dsym|\nsystem(\"curl -F dsym=@#{Shellwords.escape(dsym)} -F projectRoot=#{Shellwords.escape(ENV[\"PROJECT_DIR\"])} https://upload.bugsnag.com/\")\nend\nend";
 		};
-		74F125D51BB2ED9000487B14 /* Run Script (fix CrashReporter path in main app) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script (fix CrashReporter path in main app)";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "install_name_tool -change @rpath/CrashReporter.framework/Versions/A/CrashReporter @executable_path/../../Contents/Frameworks/CrashReporter.framework/Versions/A/CrashReporter $BUILT_PRODUCTS_DIR/TogglDesktop.app/Contents/MacOS/TogglDesktop\n";
-		};
 		BA6406F121C8FC690074BC96 /* Run Formatter */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1912,6 +1893,7 @@
 					"$(SRCROOT)/../../../../third_party/plcrashreporter/**",
 					"$(SRCROOT)/../../../lib/include",
 					"$(SRCROOT)/../../../../third_party/Sparkle/Sparkle.framework/**",
+					"$(SRCROOT)/../../../../third_party/tbb/include",
 				);
 				INFOPLIST_FILE = "test2/TogglDesktop-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1920,6 +1902,7 @@
 					"$(SRCROOT)",
 					../../../lib/osx/build,
 					"$(SRCROOT)/../../../../third_party/poco/lib/Darwin/x86_64",
+					"$(SRCROOT)/../../../../third_party/tbb/build/mac_release",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1960,6 +1943,7 @@
 					"$(SRCROOT)/../../../../third_party/plcrashreporter/**",
 					"$(SRCROOT)/../../../lib/include",
 					"$(SRCROOT)/../../../../third_party/Sparkle/Sparkle.framework/**",
+					"$(SRCROOT)/../../../../third_party/tbb/include",
 				);
 				INFOPLIST_FILE = "test2/TogglDesktop-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1968,6 +1952,7 @@
 					"$(SRCROOT)",
 					../../../lib/osx/build,
 					"$(SRCROOT)/../../../../third_party/poco/lib/Darwin/x86_64",
+					"$(SRCROOT)/../../../../third_party/tbb/build/mac_release",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = NO;
