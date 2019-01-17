@@ -18,6 +18,7 @@
 #include "./timeline_event.h"
 #include "./types.h"
 #include "tbb/concurrent_vector.h"
+#include "Poco/Mutex.h"
 
 namespace Poco {
 class Logger;
@@ -256,6 +257,8 @@ class Database {
     error ResetWindow();
 
  private:
+    Poco::Mutex lockMutex;;
+
     error vacuum();
 
     error initialize_tables();
