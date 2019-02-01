@@ -32,7 +32,6 @@ set(LIBRARY_SOURCE_FILES
     database.cc
     feedback.cc
     formatter.cc
-    get_focused_window_linux.cc
     error.cc
     gui.cc
     netconf.cc
@@ -56,6 +55,23 @@ set(LIBRARY_SOURCE_FILES
     window_change_recorder.cc
     workspace.cc
 )
+
+if(LINUX)
+    set(LIBRARY_SOURCE_FILES
+        ${LIBRARY_SOURCE_FILES}
+        get_focused_window_linux.cc
+    )
+elif(WIN32)
+    set(LIBRARY_SOURCE_FILES
+        ${LIBRARY_SOURCE_FILES}
+        get_focused_window_linux.cc
+    )
+elif(APPLE)
+    set(LIBRARY_SOURCE_FILES
+        ${LIBRARY_SOURCE_FILES}
+        get_focused_window_linux.cc
+    )
+endif()
 
 # Set up compilation targets
 add_library(TogglDesktopLibrary SHARED ${LIBRARY_SOURCE_FILES})
